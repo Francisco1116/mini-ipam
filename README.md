@@ -36,22 +36,25 @@ In large-scale cloud environments (like OpenStack or Kubernetes), automated netw
    kubectl get pods
 ```
 
-🔗 API Endpoints
+## 🔗 API Endpoints
 
 1. **Create a VPC (Network)**
+
 Creates a large parent network block.
 
-POST /api/v1/networks
-Body: {"name": "production-vpc", "cidr": "10.0.0.0/16"}
+   POST /api/v1/networks
+   Body: {"name": "production-vpc", "cidr": "10.0.0.0/16"}
 
 2. **Allocate a Subnet**
+
 Dynamically calculates and returns an available subnet of the requested size.
 
-POST /api/v1/networks/{id}/subnets
-Body: {"name": "db-subnet", "prefix": 24}
+   POST /api/v1/networks/{id}/subnets
+   Body: {"name": "db-subnet", "prefix": 24}
 
 3. **Get Network Status**
+
 Returns the VPC details and all allocated subnets.
 
-GET /api/v1/networks/{id}
-Built to demonstrate foundational cloud infrastructure and networking concepts.
+   GET /api/v1/networks/{id}
+   Built to demonstrate foundational cloud infrastructure and networking concepts.
