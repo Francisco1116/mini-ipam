@@ -22,7 +22,7 @@ In large-scale cloud environments (like OpenStack or Kubernetes), automated netw
 
 1. **Clone the repository:**
 ```bash
-   git clone [https://github.com/Francisco1116/mini-ipam.git](https://github.com/Francisco1116/mini-ipam.git)
+   git clone https://github.com/Francisco1116/mini-ipam.git
    cd mini-ipam
 ```
 
