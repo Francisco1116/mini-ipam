@@ -1,0 +1,10 @@
+# Binaries
+mini-ipam
+*.exe
+*.test
+*.out
+
+# OS specific files
+.DS_Store
+.idea/
+.vscode/
